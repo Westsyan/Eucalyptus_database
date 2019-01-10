@@ -1,0 +1,162 @@
+@()(implicit session: Session)
+@admin.main("Eurcalyptus database") {
+
+    <style>
+            .thumbnail {
+                height: 200px;
+            }
+
+            .thumbnail > .row {
+                margin-top: 12px;
+            }
+    </style>
+    <div class="row">
+        <div class="col-md-9">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-cube"></i> Introduction</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="jumbotron" style="background-color: white">
+                    <p class="text-justify">
+                        Eucalyptus robusta,commonly known as swamp mahogany or swamp messmate,is a tree
+                        native to eastern Australia.Growing in swampy or waterlogged soils,it is up to 30 m (98 ft)
+                        high with thick spongy reddish brown bark and dark green broad leaves,which help from a
+                        dense canopy.The white to cream flowers appear in autumn and winter.The leaves are
+                        commonly eaten by insects,and are a food item for the koaia.It is an important winter-flowering
+                        species in eastern Australia,and has been planted extensively in many countries
+                        around the world.Its timber is used for firewood and in general construction.
+                    </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-database"></i> Resources</h3>
+
+
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <img src="@routes.Assets.at("images/e1.png")" style="width: 100px;
+                                            height: 80px;
+                                            margin-top: 20px;">
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <h3>Genome</h3>
+                                        <p style="font-size: 17px">Introduction:</p>
+                                        <p>Eucalyptus robusta Smith Genome Database.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <img src="@routes.Assets.at("images/e2.png")" style="width: 100px;
+                                            height: 80px;
+                                            margin-top: 20px;">
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <h3>RNA-Seq</h3>
+                                        <p style="font-size: 17px">Introduction:</p>
+                                        <p>Eucalyptus robusta Smith RNA-Seq Database.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <img src="@routes.Assets.at("images/e3.png")" style="width: 100px;
+                                            height: 80px;
+                                            margin-top: 20px;">
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <h3>Markers</h3>
+                                        <p style="font-size: 17px">Introduction:</p>
+                                        <p>Eucalyptus robusta Smith markers Database.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-cube"></i> Data Statistics</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-chevron-circle-right"></i> subSpecies: 2</li>
+                        <li><i class="fa fa-chevron-circle-right"></i> Genes: 20,000</li>
+                        <li><i class="fa fa-chevron-circle-right"></i> Pathways: 400</li>
+                        <li><i class="fa fa-chevron-circle-right"></i> Markers: 4,000</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-bookmark"></i> Release Notes</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-chevron-circle-right"></i>
+                            Eucalyptus robusta Smith Database is avaliable online on April 2017.
+                        </li>
+                        <li><i class="fa fa-chevron-circle-right"></i>
+                            Genes is publicly accessible since January 2016.
+                        </li>
+                        <li><i class="fa fa-chevron-circle-right"></i>
+                            Markers is publicly accessible since November 2015.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-bookmark"></i>Global Visitors</h3>
+                </div>
+                <div class="panel-body">
+                    <div align="center" >
+
+                            <img src="@routes.Assets.at("images/map.jpg")" width="95%" height="120px" >
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+}

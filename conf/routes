@@ -1,0 +1,36 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET         /                                     controllers.IndexController.home
+
+
+GET         /eucalyptus/admin/loginBefore         controllers.IndexController.loginBefore()
+GET         /eucalyptus/back/admin/home           controllers.IndexController.adminHome
+
+GET         /eucalyptus/admin/toAdmin             controllers.IndexController.toAdmin
+
+
+GET         /eucalyptus/rna/browseBefore          controllers.RnaController.browseBefore()
+POST        /eucalyptus/rna/getAllGene            controllers.RnaController.getAllGene()
+GET         /eucalyptus/rna/searchBefore          controllers.RnaController.searchBefore()
+GET         /eucalyptus/rna/blastBefore           controllers.RnaController.blastBefore()
+GET         /eucalyptus/rna/getAllId              controllers.RnaController.getAllId()
+POST        /eucalyptus/rna/searchById            controllers.RnaController.searchById()
+GET         /eucalyptus/rna/getAllChr             controllers.RnaController.getAllChr()
+POST        /eucalyptus/rna/searchByRegion        controllers.RnaController.searchByRegion()
+
+
+GET         /eucalyptus/rna/insert                controllers.RnaController.insert()
+
+
+
+GET         /eucalyptus/tools/goBefore            controllers.ToolsController.goBefore()
+POST        /eucalyptus/tools/goResult            controllers.ToolsController.goResult()
+GET         /eucalyptus/tools/keggBefore          controllers.ToolsController.keggBefore()
+POST        /eucalyptus/tools/keggResult          controllers.ToolsController.keggResult()
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file                         controllers.Assets.at(path="/public", file)
